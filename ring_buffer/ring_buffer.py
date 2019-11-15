@@ -7,7 +7,7 @@ class RingBuffer:
 	def append(self, item):
 		for i in range(0, len(self.storage)):
 			if self.storage[i] is None:
-				print('in if')
+				# print('in if')
 				self.storage[i] = item
 				return
 
