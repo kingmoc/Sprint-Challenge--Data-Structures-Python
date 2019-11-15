@@ -24,7 +24,6 @@ class BinarySearchTree:
         # print('ran function')
         if target == self.value:
             # print('IS EQUAL', target, self.value)
-            # return True
             return self.value
 
         if target < self.value:
@@ -32,7 +31,6 @@ class BinarySearchTree:
             if not self.left:
                 # print('no left node')
                 return False
-                # return
             else:
                 return self.left.contains(target)
 
@@ -41,7 +39,6 @@ class BinarySearchTree:
             if not self.right:
                 # print('no right node')
                 return False
-                # return
             else:
                 return self.right.contains(target)
 
